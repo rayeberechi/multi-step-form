@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+      <title>RH Multi-step Form</title>
+
+      <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Ray Holdings  Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+      <script src='script.js' defer></script>
+    </head>
+  <body>
+
+  <!-- Sidebar start -->
+  <div class="nav-container" id="step-nav">
+    <div class="nav">
+      <div class="steps">
+        <div class="step-no">
+          <i class="fa-solid fa-1"></i>
+        </div>
+
+        <div class="step grid">
+          <p>Step 1</p>
+          <a href="#info-step" class="step-1">
+            Your info
+          </a>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step-no">
+          <i class="fa-solid fa-2"></i>
+        </div>
+
+        <div class="step grid">
+          <p>Step 2</p>
+          <a href="#step-plan" class="step-2">
+            Select plan
+          </a>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step-no">
+          <i class="fa-solid fa-3"></i>
+        </div>
+
+        <div class="step grid">
+          <p>Step 3</p>
+          <a href="#step-add" class="step-3">
+            Add-ons
+          </a>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="step-no">
+          <i class="fa-solid fa-4"></i>
+        </div>
+
+        <div class="step grid">
+          <p>Step 1</p>
+          <a href="#step-finale" class="step-4">
+            Summary
+          </a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="nav-img">
+    <img src="/assets/images/bg-sidebar-desktop.svg" alt="side-bar-img" class="side-bar-img">
+  </div>
+
+  <!-- Step 1 start -->
+  <div class="step-content" id="info-step">
+  <h1 id="form-title">Personal info</h1>
+
+  <p id="form-rQ">Please provide your name, email address, and phone number.</p>
+
+  <form id="form">
+    <label id="name-label">
+      Full Name: 
+      <input id="name" type="text" required placeholder="e.g. Stephen King" />
+    </label>
+    <label id="email-label">
+      Email Address: 
+      <input id="email" type="email" required placeholder="e.g. stephenking@xyz.com" />
+    </label>
+    <label id="phone-no">
+      Phone Number:
+      <span id="red">!!Required</span>
+      <input type="tel" id="phone-no" name="phoneNumber" minlength="10" maxlength="15" placeholder="e.g. +234 81234 567 89" />
+    </label>
+    
+    <input type="submit" value="Next Step" id="submit" />
+  </form>
+  </div>
+
+    <!-- Step 2 start -->
+  <div class="step-content" id="step-plan">
+    <h1 id="form-title">Select your plan</h1>
+
+    <p id="form-rQ">You have the option of monthly or yearly billing.</p>
+
+   <div class="plan">
+    <div class="plan-opt">
+      <div class="type">
+        <img src="/assets/images/icon-arcade.svg" alt="Arcade-plan">
+        <div class="plan-txt">
+          <h1>Arcade</h1>
+          <p>$9/mo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-opt">
+      <div class="type">
+        <img src="/assets/images/icon-advanced.svg" alt="Advanced-plan">
+        <div class="plan-txt">
+          <h1>Advanced</h1>
+          <p>$12/mo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="plan-opt">
+      <div class="type">
+        <img src="/assets/images/icon-pro.svg" alt="Pro-plan">
+        <div class="plan-txt">
+          <h1>Pro</h1>
+          <p> $15/mo</p>
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <div class="duration">
+      <p>Monthly</p>
+      <i class="fa-solid fa-toggle-on"></i>
+      <!-- <i class="fa-solid fa-toggle-off"></i> -->
+      <p>Yearly</p>
+    </div>
+
+    <div class="click">
+      <p class="back-click">Go Back</p>
+      <input type="submit" value="Next Step" id="submit" />
+    </div>
+  </div>
+
+  <!-- Step 3 start -->
+  <div class="step-content" id="step-add">
+    <h1 id="form-title">Pick add-ons</h1>
+
+    <p id="form-rQ">Add-ons help enhance your gaming experience.</p>
+
+    <div class="perks">
+      <div class="perk1">
+        <i class="far fa-square"></i>
+        <!-- <i class="fa-solid fa-square-check"></i> -->
+
+        <div class="txt">
+          <h1>Online Service</h1>
+          <p>Access to multiplayer games</p>
+        </div>
+
+        <p class="add-on-price">+$1/mo</p>
+      </div>
+
+      <div class="perk2">
+        <i class="far fa-square"></i>
+        <!-- <i class="fa-solid fa-square-check"></i> -->
+
+        <div class="txt">
+          <h1>Larger storage</h1>
+          <p>Extra 1TB of cloud saves</p>
+        </div>
+
+        <p class="add-on-price">+$2/mo</p>
+      </div>
+
+      <div class="perk3">
+        <i class="far fa-square"></i>
+        <!-- <i class="fa-solid fa-square-check"></i> -->
+
+        <div class="txt">
+          <h1>Customizable Profile</h1>
+          <p>Custom theme on your profile</p>
+        </div>
+
+        <p class="add-on-price">+$2/mo</p>
+      </div>
+    </div>
+
+    <div class="click">
+      <p class="back-click">Go Back</p>
+      <input type="submit" value="Next Step" id="submit" />
+    </div>
+  </div>  
+
+  <!-- Step 4 start -->
+  <div class="step-content" id="step-finale">
+    <h1 id="form-title">Finishing up</h1>
+
+    <p id="form-rQ">Double-check everything looks OK before confirming.</p>
+
+    <div class="final-choice">
+      <div class="plan-choice">
+        <div class="picked-plan">
+          <h1>Plan<span class="plan-time">(duration)</span></h1>
+          <div class="switch-plan">
+            <a href="#step-plan" id="switch-plan">Change</a>
+          </div>
+        </div>
+  
+        <p>+$2/mo</p>
+      </div>
+  
+      <div class="perk-choice">
+        <h1>Online Service</h1>
+        
+        <p>+$1/mo</p>
+      </div>
+  
+      <div class="total">
+        <h1>Total <span id="time">(per month/year)</span></h1>
+        
+        <p>+$2/mo</p>
+      </div>
+    </div>
+
+    <div class="click">
+      <p class="back-click">Go Back</p>
+      <input type="submit" value="Confirm" id="submit" />
+    </div>
+  </div>    
+
+  <!-- Dynamically add subscription and add-on selections here -->
+   
+
+  <!-- Step 5 start -->
+  <div class="tnks step-content">
+    <img src="/assets/images/icon-thank-you.svg" alt="">
+
+    <h1>Thank You!</h1>
+
+    <p>Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@rhgaming.com.</p>
+    </div>    
+  </body>
+</html>

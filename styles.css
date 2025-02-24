@@ -1,0 +1,645 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px;
+}
+
+.nav-container {
+    color: #fff;
+    margin: 7%;
+}
+
+.nav-img {
+    position: absolute;
+    margin-top: -400px;
+    z-index: -1;
+}
+
+.step-no {
+    border: 1px solid #fff;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.step-no:hover {
+    background-color: #88b0ec;
+}
+
+.fa-1, .fa-2, .fa-3, .fa-4 {
+    margin:  10px 15px;
+}
+
+.steps {
+    display: flex;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.step p {
+    color: rgb(182, 178, 178);
+}
+
+.step a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.step a:hover {
+    color: #fff;
+    font-style: italic;
+}
+
+.step-content {
+    display: flex;
+    background-color: #fff;
+    margin: 3% auto;
+    border-radius: 10px;
+    box-shadow: 20px 30px 20px rgba(47, 18, 18, 0.101);
+    width: 900px;
+    min-height: 100vh;
+    margin-left: 350px;
+}
+
+#info-step, #step-plan, #step-add, #step-finale
+{
+    margin-top: -350px;
+    display: grid;
+}
+
+#info-step p {
+    margin-top: -110px;
+}
+
+#form {
+    margin-top: -180px;
+    margin-left: 40px;
+}
+
+#form label {
+    display: grid;
+    margin-bottom: 30px;
+}
+
+#form input, #step-plan input, #step-add input, #step-finale input {
+    cursor: pointer;
+    margin-top: 5px;
+    width: 400px;
+    min-height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    border-color: #444444;
+    padding: 10px;
+}
+
+#form input[type="submit"], #step-plan input[type="submit"], #step-add input[type="submit"], #step-finale input[type="submit"] {
+    width: 100px;
+    height: 50px;
+    margin-right: 400px;
+    background-color: navy;
+    color: #fff;
+}
+
+#red {
+    color: red;
+    font-size: 10px;
+    margin: -15px 100px 0 350px;
+}
+
+#info-step input[type="submit"] {
+    margin-left: 300px;
+    margin-top: 50px; 
+}
+
+#info-step input[type="submit"]:hover, #step-plan input[type="submit"]:hover,  #step-add input[type="submit"]:hover, #step-finale input[type="submit"]:hover {
+    background-color: #2053b2;
+}
+
+#step-plan #form-rQ {
+    margin-top: -90px;
+}
+
+.plan {
+    display: flex;
+    margin-top: -120px;
+}
+
+.plan-opt {
+    margin-right: 20px;
+    width: 150px;
+    height: 170px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.plan-opt h1, .perks h1, #step-finale .plan-choice h1, #step-finale .perk-choice h1, #step-finale .total h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.type {
+    margin: 25px 25px 0;
+}
+
+.type img {
+    margin-bottom: 30px;
+}
+
+.duration {
+    display: flex;
+    margin-top: -90px;
+    width: 500px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0px solid grey;
+    background-color: aliceblue;   
+}
+
+.fa-toggle-on, .fa-toggle-off {
+    margin: 0 10px;
+}
+
+.click {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    cursor: pointer;
+}
+
+.click .back-click {
+    margin-top: 20px;
+    color: grey;
+}
+
+.click .back-click:hover {
+    color: #2053b2;
+}
+
+#step-add #form-rQ {
+    margin-top: -130px;
+}
+
+.perks {
+    margin-top: -220px;
+}
+
+.perk1, .perk2, .perk3 {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.perks i {
+    margin: 5px;
+}
+
+.perk1, .perk2, .perk3 {
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.txt {
+    margin-top: -5px;
+    margin-left: -200px;
+}
+
+.txt p {
+    font-size: 12px;
+}
+
+.add-on-price {
+    color: #0725b6;
+}
+
+#step-finale #form-rQ {
+    margin-top: -130px;
+}
+
+.final-choice {
+    margin-top: -220px;
+    margin-left: 20px;
+}
+
+#step-finale .plan-choice, #step-finale .perk-choice, #step-finale .total {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+#step-finale a {
+    color: #2053b2;
+}
+
+#step-finale a:hover {
+    font-style: italic;
+}
+
+#step-finale .total, #step-finale .perk-choice {
+    color: gray;
+}
+
+#step-finale .plan-choice p, #step-finale .perk-choice p {
+    color: #2053b2;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#step-finale .total p{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.picked-plan {
+    display: flex;
+}
+
+.switch-plan {
+    margin-left: 5px;
+    margin-top: 3px;
+    font-size: 10px;
+}
+
+.tnks {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: -400px;
+    width: 900px;
+}
+
+.tnks h1 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.tnks p {
+    width: 430px;
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+}
+
+/* #info-step, 
+#step-plan, 
+#step-add, 
+#step-finale, 
+.tnks {
+    display: none;
+} */
+
+@media (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: #dce0ef;
+        margin-top: 30%;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 375px;
+        height: 800px;
+        box-shadow: 20px 20px 20px rgba(47, 18, 18, 0.101);
+    }
+
+    .step, .nav-img {
+        display: none;
+    }
+    
+    .nav {
+        background-image: url(/assets/images/bg-sidebar-mobile.svg);
+        background-color: rgba(30, 16, 186, 0);
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+        margin: -150px 125px 0 -35px;
+    }
+
+    .step-no:active {
+        background-color: #88b0ec;
+    }
+
+    .step-content {
+        position: absolute;
+        margin: 0 30px 0 30px;
+        padding: 20px;
+        top: 430px;
+        left: 0;
+        width: 300px; 
+    }
+
+    #info-step #form-rQ, #step-plan #form-rQ, #step-add #form-rQ, #step-finale #form-rQ, .tnks p {
+        width: 250px;
+    }
+
+    #info-step p, 
+    #step-plan p, 
+    #step-add p, 
+    #step-finale p
+    , .tnks p 
+    {
+        color: gray;
+    }
+
+    #form input {
+        width: 200px;
+    }
+
+    #form input[type="submit"] {
+        margin: 100px 0 0 90px;
+    }
+
+    #red {
+        font-size: 10px;
+        margin: -15px 100px 0 150px;
+    }
+
+    .plan, .perks, .final-choice {
+        flex-direction: column;
+        margin: 0 0 20px 5px;
+    }
+
+    .plan-opt, #step-finale .plan-choice, #step-finale .perk-choice, #step-finale .total,  .perk1, .perk2, .perk3 {
+        width: 250px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .type {
+        display: flex;
+    }
+
+    .plan-txt {
+        margin-left: 20px;
+    }
+
+    .duration {
+        width: 150px;
+        margin: 20px 0 20px 50px;
+    }
+
+    .click {
+        margin-top: 50px;
+    }
+
+    #step-plan input[type="submit"], #step-add input[type="submit"], #step-finale input[type="submit"] {
+        margin-top: 10px;
+        margin-left: 130px;
+    }
+
+    #step-plan #form-rQ, #step-add #form-rQ, #step-finale #form-rQ {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .txt {
+        margin-left: 5px;
+    }
+
+    .tnks {
+        top: 60px;
+    }
+
+    /* #info-step, 
+    #step-plan, 
+    #step-add,
+    #step-finale,
+     .tnks 
+     {
+        display: none;
+    } */
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    body {
+        display: flex;
+        flex-direction: row;
+        background-color: #dce0ef;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        box-shadow: 20px 20px 20px rgba(47, 18, 18, 0.101);
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    .nav-container {
+        width: 20%;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/assets/images/bg-sidebar-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 20px;
+        width: 80%;
+    }
+
+    .step-no {
+        margin: 10px 0;
+    }
+
+    .nav-img {
+        display: none;
+    }
+
+    .step-content {
+        position: relative; 
+        margin: 0 0 0 20px;
+        padding: 20px;
+        width: 78%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        top: 170px;
+    }
+
+    #form {
+        margin: 20px 0 0 60px;
+        font-size: 20;
+    }
+
+    #info-step #form-title, #step-plan #form-title, #step-add #form-title, #step-finale #form-title {
+        font-size: 20px;
+        margin-left: 60px;
+    }
+
+    #info-step #form-rQ {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    #info-step #form-rQ, #step-plan #form-rQ, #step-add #form-rQ, #step-finale #form-rQ, .tnks p {
+        width: 70%;
+    }
+
+    #info-step p,
+    #step-plan p,
+    #step-add p,
+    #step-finale p,
+    .tnks p {
+        color: gray;
+    }
+
+    #form input {
+        width: 80%;
+    }
+
+    #form input[type="submit"] {
+        margin: 20px auto;
+    }
+
+    #red {
+        font-size: 10px;
+    }
+
+    .plan, .perks, .final-choice {
+        flex-direction: row;
+        margin: 20px 0;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .plan {
+       margin-left: 30px; 
+    }
+
+    .plan-opt {
+        border: none;
+    }
+
+    .plan img {
+        width: 20px;
+    }
+
+    #step-add #form-rQ, .txt p, #step-finale #form-rQ, #switch-plan {
+        display: none;
+    }
+
+    .perk1, .perk2, .perk3 {
+        border: none;
+    }
+
+    .txt h1 {
+        margin-left: 10px;
+    }
+
+    .add-on-price {
+        margin-left: 30px;
+    }
+    
+    #step-add .click {
+        margin-top: -10px;
+    }
+
+    .plan-opt, #step-finale .plan-choice, #step-finale .perk-choice, #step-finale .total, .perk1, .perk2, .perk3 {
+        width: 20%;
+        height: auto;
+        margin: 0;
+    }
+
+    .type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #step-plan .plan-txt {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #step-plan .duration {
+        width: 50%;
+        margin: 10px 0 0 80px;
+    }
+
+    .click {
+        margin:10px 0 20px 40px;
+        width: 80%;
+        justify-content: space-around;
+        font-size: 10px;
+    }
+
+    #step-plan input[type="submit"], #step-add input[type="submit"], #step-finale input[type="submit"] {
+        margin: 0;
+        height: 10px;
+    }
+
+    #step-plan #form-rQ, #step-add #form-rQ, #step-finale #form-rQ {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .final-choice {
+        font-size: 10px;
+        margin-top: -10px;
+    }
+
+    .plan-choice p, .perk-choice p, .total p {
+        margin-left: 40px;
+    }
+
+    .tnks {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
+
+    #info-step, 
+    #step-plan, 
+    #step-add,
+    #step-finale,
+     .tnks 
+     {
+        display: none;
+    }
+    
+}
+    
